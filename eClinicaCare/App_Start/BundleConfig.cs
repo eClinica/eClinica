@@ -9,7 +9,10 @@ namespace eClinicaCare
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+                        "~/Scripts/jquery-{version}.js",
+                        "~/Scripts/bootstrap.js",
+                        "~/Scripts/bootstrap.min.js"
+                        ));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
                         "~/Scripts/jquery-ui-{version}.js"));
@@ -37,7 +40,18 @@ namespace eClinicaCare
                         "~/Content/themes/base/jquery.ui.tabs.css",
                         "~/Content/themes/base/jquery.ui.datepicker.css",
                         "~/Content/themes/base/jquery.ui.progressbar.css",
-                        "~/Content/themes/base/jquery.ui.theme.css"));
+                        "~/Content/themes/base/jquery.ui.theme.css",
+                        "~/Content/themes/base/bootstrap/css/bootstrap.css",
+                        "~/Content/themes/base/bootstrap/css/bootstrap-theme.min.css",
+                        "~/Content/themes/base/bootstrap/css/bootstrap-theme.css",
+                        "~/Content/themes/base/bootstrap/css/bootstrap.min.css"
+                        ));
+            bundles.Add(new StyleBundle("~/Content/themes/base/bootstrap/css/css").Include(
+                       "~/Content/themes/base/bootstrap/bootstrap.css",
+                       "~/Content/themes/base/bootstrap/bootstrap-theme.min.css",
+                       "~/Content/themes/base/bootstrap/bootstrap-theme.css",
+                       "~/Content/themes/base/bootstrap/bootstrap.min.css"
+                       ));
         }
     }
 }
