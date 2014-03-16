@@ -9,7 +9,6 @@ namespace eClinicaCare.Models
     {
         #region private variables
         private int DoctorCode;
-
         private long Title;
         private string DoctorName;
         private string Qualification;
