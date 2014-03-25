@@ -9,9 +9,11 @@ namespace eClinicaCare
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
+                        "~/Scripts/angular.js",
                         "~/Scripts/jquery-{version}.js",
                         "~/Scripts/bootstrap.js",
-                        "~/Scripts/bootstrap.min.js"
+                        "~/Scripts/bootstrap.min.js",
+                        "~/App/App.js"
                         ));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryui").Include(
