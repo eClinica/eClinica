@@ -1,0 +1,143 @@
+﻿@{
+    ViewBag.Title = "Detail Form";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h4>Detail Form</h4>
+<form class="form-horizontal" role="form">
+    <div class="form-group">
+        <div class="alert alert-info alert-dismissable" style="text-align:center">
+            <h3> Welcome Shivesh Pandey </h3>
+
+        </div>
+    </div>
+    <div class=" form-group row">
+        <label for="Date of Birth" class="col-sm-2 control-label">Date of Birth</label>
+        <div class="col-lg-2">
+            <div class="input-group">
+                <span class="input-group-addon">Day</span>
+                <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+
+                </select>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <div class="input-group">
+                <span class="input-group-addon">Month</span>
+                <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+
+                </select>
+            </div>
+        </div>
+
+        <div class="col-lg-2">
+            <div class="input-group">
+                <span class="input-group-addon">Year</span>
+                <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+
+                </select>
+            </div>
+        </div>
+
+    </div>
+    <div class=" form-group row">
+        <label for="Date of Birth" class="col-sm-2 control-label">Country</label>
+        <div class="col-lg-6">
+
+            <select class="form-control">
+                <option>India</option>
+
+
+            </select>
+
+        </div>
+    </div>
+    <div class=" form-group row">
+        <label for="Date of Birth" class="col-sm-2 control-label">State</label>
+        <div class="col-lg-6">
+
+            <select class="form-control">
+                <option>Madhya Pradesh</option>
+                <option>Maharashtra</option>
+                <option>Rajashthan</option>
+
+            </select>
+
+        </div>
+    </div>
+    <div class=" form-group row">
+        <label for="Date of Birth" class="col-sm-2 control-label">City</label>
+        <div class="col-lg-6">
+
+            <select class="form-control">
+                <option>Rewa</option>
+                <option>Pune</option>
+                <option>Jaipur</option>
+
+            </select>
+
+        </div>
+    </div>
+    <div class=" form-group row">
+        <label for="Date of Birth" class="col-sm-2 control-label">Address</label>
+        <div class="col-lg-6">
+            <textarea id="txtAddress" rows="2" cols="20" class="form-control" placeholder="Address" required></textarea>
+        </div>
+    </div>
+    <div class=" form-group row">
+        <label for="Mobile" class="col-sm-2 control-label">Mobile</label>
+        <div class="col-lg-6">
+            <input type="number" id="txtMobile" class="form-control" placeholder="Mobile No" required />
+        </div>
+    </div>
+    <div class=" form-group row">
+        <label for="Phone" class="col-sm-2 control-label">Phone No</label>
+        <div class="col-lg-2">
+            @*<input type="number" id="txtPhone" class="form-control col-sm-3" placeholder="Phone No" required />*@
+            <input type="number" id="txtPhone1" class="form-control" placeholder="Phone No" required />
+           
+        </div>
+       
+        <div class="col-lg-4">
+           
+            <input type="number" id="txtPhone" class="form-control" placeholder="Phone No" required />
+        </div>
+    </div>
+    <div class=" form-group row">
+        <label for="Email" class="col-sm-2 control-label">Email</label>
+        <div class="col-lg-6">
+            <input id="txtEmail" type="email" class="form-control" placeholder="Email@abc.com" required />
+        </div>
+    </div>
+    <div class=" form-group row">
+        <label for="Qualifications" class="col-sm-2 control-label">Qualifications</label>
+        <div class="col-lg-6">
+            <input id="txtQualification1" type="text"  class="form-control" placeholder="Qualification 1" required />
+            <input id="txtQualification2" type="text" class="form-control" placeholder="Qualification 2" required />
+            <input id="txtQualification3" type="text" class="form-control" placeholder="Qualification 3" required />
+            <button type="button" class="btn btn-default">Add </button>
+        </div>
+    </div>
+    <div class=" form-group row">
+        <label for="Specialization" class="col-sm-2 control-label">Specialization</label>
+        <div class="col-lg-6">
+            <input id="txtSpecialization" type="text" class="form-control" placeholder="Specialization " required />
+            
+        </div>
+    </div>
+    
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-8">
+            <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+    </div>
+</form>

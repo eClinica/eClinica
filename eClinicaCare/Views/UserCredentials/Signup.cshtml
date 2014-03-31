@@ -1,0 +1,81 @@
+﻿@model eClinicaCare.Models.clsDoctor
+
+@{
+    ViewBag.Title = "Signup";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Signup</h2>
+
+<form class="form-horizontal" role="form">
+ 
+    <div class="form-group">
+        <label for="firstname" class="col-sm-2 control-label">First Name</label>
+        <div class="col-sm-1">
+            <select class="form-control">
+                <option>Mr</option>
+                <option>Mrs</option>
+                <option>Dr</option>
+
+            </select>
+        </div>
+        <div class="col-sm-7">
+            <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="lastname" class="col-sm-2 control-label">Last Name</label>
+        <div class="col-sm-8">
+            <input type="text" class="form-control" id="firstName" placeholder="Last Name">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="Gender" class="col-sm-2 control-label">Gender</label>
+        <div class="col-sm-8">
+            <div class="radio col-sm-2">
+                <label>
+                    <input type="radio" name="Gender" id="rdbMale" value="option2" checked>
+                    Male
+                </label>
+            </div>
+            <div class="radio col-sm-2">
+                <label>
+                    <input type="radio" name="Gender" id="rdbFemale" value="option1">
+                    Female
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="lastname" class="col-sm-2 control-label">Login Name</label>
+        <div class="col-sm-8">
+            <input type="text" class="form-control" id="firstName" placeholder="Login Name">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="lastname" class="col-sm-2 control-label">Password</label>
+        <div class="col-sm-8">
+            <input type="text" class="form-control" id="firstName" placeholder="Password">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="lastname" class="col-sm-2 control-label">Confirm Password</label>
+        <div class="col-sm-8">
+            <input type="text" class="form-control" id="firstName" placeholder="Confirm Password">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+        <div class="col-sm-8">
+            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-8">
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+        </div>
+    </div>
+</form>
+
+
