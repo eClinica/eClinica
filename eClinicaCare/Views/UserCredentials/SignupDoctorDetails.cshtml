@@ -7,10 +7,11 @@
 <form class="form-horizontal" role="form">
     <div class="form-group">
         <div class="alert alert-info alert-dismissable" style="text-align:center">
-            <h3> Welcome Shivesh Pandey </h3>
+            <h4> Welcome Shivesh Pandey </h4>
 
         </div>
     </div>
+    
     <div class=" form-group row">
         <label for="Date of Birth" class="col-sm-2 control-label">Date of Birth</label>
         <div class="col-lg-2">
@@ -134,10 +135,100 @@
             
         </div>
     </div>
-    
-    <div class="form-group">
+    <div class=" form-group row">
         <div class="col-sm-offset-2 col-sm-8">
-            <button type="submit" class="btn btn-primary">Save</button>
+            <button type="button" class="btn btn-group btn-sm" data-toggle="collapse" data-target="#ClinicalDetails">
+                Clinical Details &raquo;
+            </button>
+        </div>
+        </div>
+    <div id="ClinicalDetails" class="collapse">
+        <div class=" form-group row">
+            <label for="clinicname" class="col-sm-2 control-label">Clinic/Hospital Name</label>
+            <div class="col-lg-6">
+                <input type="text" id="txtClinicName" class="form-control" placeholder="Clinic/Hospital Name" required />
+            </div>
+        </div>
+        <div class=" form-group row">
+            <label for="Address" class="col-sm-2 control-label">Address</label>
+            <div class="col-lg-6">
+                <textarea id="txtAddress" rows="2" cols="20" class="form-control" placeholder="Address" required></textarea>
+            </div>
+        </div>
+        <div class=" form-group row">
+            <label for="frontdeskname" class="col-sm-2 control-label">front Desk No</label>
+            <div class="col-lg-2">
+                <input type="number" id="txtPhone1" class="form-control" placeholder="Phone No" required />
+            </div>
+            <div class="col-lg-4">
+                <input type="number" id="txtPhone" class="form-control" placeholder="Phone No" required />
+            </div>
+        </div>
+        <div class=" form-group row">
+            <label for="contactperson" class="col-sm-2 control-label">Contact Person</label>
+            <div class="col-lg-4">
+                <input type="text" id="txtContactPerson" class="form-control" placeholder="Person Name" required />
+            </div>
+
+        </div>
+        <div class=" form-group row">
+            <label for="Phone" class="col-sm-2 control-label">Email</label>
+            <div class="col-lg-4">
+                <input type="email" id="txtEmail" class="form-control" placeholder="Email Id" required />
+            </div>
+
+        </div>
+
+    </div>
+    <div class=" form-group row">
+        <div class="col-sm-offset-2 col-sm-8">
+            <button type="button" class="btn btn-group btn-sm" data-toggle="collapse" data-target="#PaymentDetails">
+                Payment Details &raquo;
+            </button>
         </div>
     </div>
+    <div id="PaymentDetails" class="collapse">
+        <div class=" form-group row">
+            <label for="clinicname" class="col-sm-2 control-label">Clinic/Hospital Name</label>
+            <div class="col-lg-6">
+                <input type="text" id="txtClinicName" class="form-control" placeholder="Clinic/Hospital Name" required />
+            </div>
+        </div>
+        <div class=" form-group row">
+            <label for="Address" class="col-sm-2 control-label">Address</label>
+            <div class="col-lg-6">
+                <textarea id="txtAddress" rows="2" cols="20" class="form-control" placeholder="Address" required></textarea>
+            </div>
+        </div>
+        <div class=" form-group row">
+            <label for="frontdeskname" class="col-sm-2 control-label">front Desk No</label>
+            <div class="col-lg-2">
+                <input type="number" id="txtPhone1" class="form-control" placeholder="Phone No" required />
+            </div>
+            <div class="col-lg-4">
+                <input type="number" id="txtPhone" class="form-control" placeholder="Phone No" required />
+            </div>
+        </div>
+        <div class=" form-group row">
+            <label for="contactperson" class="col-sm-2 control-label">Contact Person</label>
+            <div class="col-lg-4">
+                <input type="text" id="txtContactPerson" class="form-control" placeholder="Person Name" required />
+            </div>
+
+        </div>
+        <div class=" form-group row">
+            <label for="Phone" class="col-sm-2 control-label">Email</label>
+            <div class="col-lg-4">
+                <input type="email" id="txtEmail" class="form-control" placeholder="Email Id" required />
+            </div>
+
+        </div>
+
+    </div>
+
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-8">
+                <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+        </div>
 </form>
